@@ -39,6 +39,14 @@ namespace hero
 
         }
 
+        public void showPowers()
+        {
+            for (int count = 0; count < this.superPowers.Length; count++)
+            {
+                Console.WriteLine("the hero's superpower is {0}", superPowers[count]);
+            }
+        }
+
 
 
 
