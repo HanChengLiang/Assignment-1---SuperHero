@@ -1,4 +1,8 @@
-﻿using System;
+﻿// Author: Han Cheng Liang
+// ID: 300791705
+//class: programming 2 section 062
+//the making of a super hero - array random power
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +21,7 @@ namespace hero
         {
             this.generateRandomPowers();
         }
-
+        //generate 3 different power
         private void generateRandomPowers()
         {
             string[] power = { "Super Speed", "Super Strength", "Body Armour", "Flight", "Fire Generation", "Weather Control" };
@@ -38,7 +42,7 @@ namespace hero
             }
 
         }
-
+        //display  the chosen powers
         public void showPowers()
         {
             for (int count = 0; count < this.superPowers.Length; count++)
