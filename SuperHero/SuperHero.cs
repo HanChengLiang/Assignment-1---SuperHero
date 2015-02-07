@@ -18,7 +18,26 @@ namespace hero
             this.generateRandomPowers();
         }
 
-      
+        private void generateRandomPowers()
+        {
+            string[] power = { "Super Speed", "Super Strength", "Body Armour", "Flight", "Fire Generation", "Weather Control" };
+            this.superPowers = new string[3];
+            int count = 0;
+            while (count < superPowers.Length)
+            {
+                Random rnd = new Random();
+                int number = rnd.Next(6);
+                if (power[number] != "chosen")
+                {
+
+                    superPowers[count] = power[number];
+                    power[number] = "chosen";
+                    count++;
+                }
+
+            }
+
+        }
 
 
 
